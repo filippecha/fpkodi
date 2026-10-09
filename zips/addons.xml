@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.webshare.search" name="Webshare Hledání" version="1.3.0" provider-name="filippecha">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="cs_CZ">Vyhledávání a přehrávání videí z Webshare.cz</summary>
+        <summary lang="en_GB">Search and play videos from Webshare.cz</summary>
+        <description lang="cs_CZ">Vyhledá videa na Webshare.cz a po kliknutí je rovnou přehraje. Vyžaduje účet na Webshare.cz (doporučeno VIP/premium).</description>
+        <description lang="en_GB">Search Webshare.cz for videos and play them with a single click. Requires a Webshare.cz account (VIP recommended).</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="repository.fpkodi" name="FP Kodi repozitář" version="1.0.0" provider-name="filippecha">
+    <extension point="xbmc.addon.repository" name="FP Kodi repozitář">
+        <dir>
+            <info compressed="false">https://filippecha.github.io/fpkodi/zips/addons.xml</info>
+            <checksum>https://filippecha.github.io/fpkodi/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://filippecha.github.io/fpkodi/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="cs_CZ">Repozitář doplňků Filipa Pechy (Webshare Hledání)</summary>
+        <summary lang="en_GB">Filip Pecha's add-on repository (Webshare Search)</summary>
+        <description lang="cs_CZ">Po instalaci repozitáře se doplňky z něj aktualizují automaticky.</description>
+        <description lang="en_GB">Add-ons installed from this repository are updated automatically.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+</addons>
